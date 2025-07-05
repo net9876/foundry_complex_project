@@ -66,12 +66,12 @@ share/python-wheels/
 MANIFEST
 
 # Virtual environments
-!venv/
-!env/
-!ENV/
-!.venv/
-!.env/
-!virtualenv/
+venv/
+env/
+ENV/
+.venv/
+.env/
+virtualenv/
 !pip-log.txt
 pip-delete-this-directory.txt
 
