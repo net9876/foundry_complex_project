@@ -1,0 +1,19 @@
+# Essential packages (already installed)
+python-dotenv>=1.0.0
+openai>=1.6.0
+azure-identity>=1.15.0
+azure-ai-formrecognizer>=3.3.0
+azure-cognitiveservices-vision-computervision>=0.9.0
+
+# Additional packages with compatible versions
+azure-ai-textanalytics>=5.3.0
+azure-search-documents>=11.4.0
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+pandas>=2.0.0
+numpy>=1.24.0
+pillow>=10.0.0
+
+# Development tools
+pytest>=7.0.0
+pytest-asyncio>=0.21.0

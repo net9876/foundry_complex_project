@@ -1,0 +1,1 @@
+Computer Vision analyzes images to detect objects, read text, and generate descriptions automatically.

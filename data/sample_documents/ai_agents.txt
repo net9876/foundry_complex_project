@@ -1,0 +1,1 @@
+Azure AI agents can orchestrate multiple AI services to create intelligent workflows. They can make decisions, route requests, and coordinate complex multi-step processes.

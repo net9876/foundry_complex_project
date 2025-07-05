@@ -1,0 +1,1 @@
+Azure AI Search provides full-text search capabilities with AI enrichment. It can index documents, extract insights, and enable semantic search across large document collections.

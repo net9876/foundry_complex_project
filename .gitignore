@@ -1,0 +1,466 @@
+# AI-102 Lab Project - .gitignore
+# ================================
+
+# 🔒 SECURITY - Never commit sensitive information
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+creds.txt
+credentials.json
+secrets/
+
+# Azure and Cloud credentials
+.azure/
+azure-credentials.json
+service-principal.json
+
+# 🧠 AI/ML - Model artifacts and data
+models/
+checkpoints/
+*.pkl
+*.model
+*.weights
+*.h5
+*.onnx
+
+# Knowledge base and processed data
+data/knowledge_base/*.json
+data/processed/
+data/temp/
+data/cache/
+*.vector
+*.index
+*.faiss
+
+# Training data and logs
+logs/
+training_logs/
+wandb/
+mlruns/
+experiments/
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+!venv/
+!env/
+!ENV/
+!.venv/
+!.env/
+!virtualenv/
+!pip-log.txt
+pip-delete-this-directory.txt
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# 💻 IDEs and Editors
+# VS Code
+.vscode/
+!.vscode/settings.json.example
+!.vscode/tasks.json.example
+!.vscode/launch.json.example
+!.vscode/extensions.json.example
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# 🖥️ Operating Systems
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# 🌐 Web Development
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Snowpack dependency directory
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variable files
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# Temporary folders
+tmp/
+temp/
+
+# 🐳 Docker
+*.log
+Dockerfile*.local
+docker-compose.override.yml
+.dockerignore
+
+# 📊 Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# 📈 Analytics and Monitoring
+# Application Insights
+ApplicationInsights.config
+
+# New Relic
+newrelic.ini
+
+# 🧪 Testing
+# Test artifacts
+test-results/
+test-output/
+screenshots/
+videos/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# 📦 Package managers
+# Bower
+bower_components/
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# 🔧 Build tools
+# Webpack
+webpack-stats.json
+
+# Rollup
+rollup-stats.json
+
+# Vite
+dist-ssr
+*.local
+
+# 📚 Documentation generators
+# Sphinx
+docs/_build/
+docs/source/_static/
+docs/source/_templates/
+
+# 🚀 Deployment
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# CloudFormation
+*.template
+*.stack
+
+# Serverless Framework
+.serverless/
+
+# 📋 Logs and temporary files
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+
+# 🎯 AI-102 Lab Specific
+# Generated knowledge bases (keep structure, not content)
+data/knowledge_base/*.json
+!data/knowledge_base/.gitkeep
+
+# Processing artifacts
+data/processed/
+data/temp/
+data/cache/
+
+# Model checkpoints
+checkpoints/
+saved_models/
+
+# Azure CLI cache
+.azure/
+
+# Cost reports
+cost-reports/
+usage-reports/
+
+# Performance benchmarks
+benchmarks/results/
+performance-logs/
+
+# 📸 Media and assets (if large)
+# Uncomment if you have large media files
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+# *.mp3
+# *.wav
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+# *.tiff
+# *.pdf
+
+# But keep sample documents
+!data/sample_documents/*.txt
+!data/sample_documents/*.md
+!data/sample_documents/*.json
+
+# 🔄 Version control
+.git/
+*.patch
+
+# Keep important example files
+!.env.example
+!.vscode/settings.json.example
+!docker-compose.override.yml.example
+!config.example.json
+
+# 📝 Editor specific
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# But keep example configurations
+!.vscode/*.example.json
+
+# 🎓 Learning and documentation
+# Keep documentation but not drafts
+docs/drafts/
+docs/private/
+*.draft.md
+
+# 🔍 Search indexes (if using local search)
+.search_index/
+search_cache/
+
+# 📊 Analytics data
+analytics/
+metrics/
+telemetry/
+
+# End of .gitignore
